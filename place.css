@@ -1,0 +1,104 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EBF4F6;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #071952;
+  line-height: 1.6;
+}
+
+/* Container for each location */
+.destination {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 18px rgba(7, 25, 82, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Slight lift on hover */
+.destination:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 25px rgba(7, 25, 82, 0.25);
+}
+
+/* Image */
+.destination img {
+  display: block;
+  max-width: 70%;   /* make image smaller relative to container */
+  max-height: 300px; /* reduce height */
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 20px auto; /* center image with auto margins */
+  transition: transform 0.4s ease;
+}
+
+/* Subtle zoom on hover */
+.destination img:hover {
+  transform: scale(1.05);
+}
+
+/* Title */
+.destination h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #051034;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* Paragraphs */
+.destination p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Section headers */
+.destination h3 {
+  margin-top: 20px;
+  color: #37B7C3;
+  font-size: 22px;
+  position: relative;
+}
+
+.destination h3:hover::after {
+  width: 100px;
+}
+
+/* Lists */
+.destination ul {
+  margin: 10px 0 20px 25px;
+  font-size: 17px;
+}
+
+/* Back button */
+.back-home {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.back-home a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #051034;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Button hover animation */
+.back-home a:hover {
+  background-color: #37B7C3;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 6px 15px rgba(7, 25, 82, 0.25);
+}

@@ -6,36 +6,43 @@ body{
     background-color:#EBF4F6;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-header{
-    text-align: center;
-    padding: 20px 10%;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
     background-color: #051034;
 }
-header h3{
-    font-size: 40px;
+header .globe {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+header h3 {
+    font-size: 28px;
     color: #EBF4F6;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    margin-top: 20px;
-    margin-left: 20px;
+    flex-grow: 1; 
+    margin: 0;
 }
-nav ul{
+nav ul {
     display: flex;
-    list-style-type: none;
-    align-items: last baseline;
+    gap: 30px;
+    list-style: none;
 }
-nav ul li{
-    font-size: 22px;
+nav ul li {
+    font-size: 18px;
     color: #EBF4F6;
-    margin-left: 20px;
-    list-style-type: none;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
-nav a{
+nav ul li:hover {
+    color: #37B7C3;
+}
+nav a {
     text-decoration: none;
-}
-nav ul li a:hover{
-    color: #46d2de;
+    color: inherit;
 }
 .explore, .memories h3{
     display: flex;
